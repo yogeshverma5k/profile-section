@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+/* Navbar */
+
+nav {
+  background: white;
+  padding: 18px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 10px #ddd;
+}
+
+nav h2 {
+  color: #2563eb;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+
+/* Hero */
+
+.hero {
+  max-width: 1000px;
+
+  margin: 50px auto;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: #2563eb;
+}
+
+.hero-text h3 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+
+/* Buttons */
+
+.buttons a {
+  display: inline-block;
+
+  background: #2563eb;
+  color: white;
+
+  text-decoration: none;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  margin-right: 8px;
+}
+
+.buttons a.github {
+  background: #222;
+}
+
+
+/* Profile Image */
+
+.photo {
+  width: 300px;
+  height: 330px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px #ccd;
+}
+
+
+/* Sections */
+
+.section {
+  max-width: 1000px;
+
+  margin: 30px auto;
+
+  padding: 20px;
+}
+
+
+/* Cards */
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 3px 15px #ddd;
+
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #2563eb;
+
+  margin-bottom: 12px;
+}
+
+
+/* Skills */
+
+.skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.skill {
+  background: #e8f0ff;
+
+  color: #2563eb;
+
+  padding: 10px 18px;
+
+  border-radius: 20px;
+
+  font-weight: bold;
+}
+
+
+/* Contact */
+
+.contact p {
+  margin: 8px 0;
+}
+
+
+/* Social Links */
+
+.social a {
+  display: inline-block;
+
+  text-decoration: none;
+
+  color: white;
+
+  background: #222;
+
+  padding: 9px 15px;
+
+  border-radius: 7px;
+
+  margin: 8px 5px 0 0;
+}
+
+.social a.instagram {
+  background: #e1306c;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+
+  padding: 25px;
+
+  margin-top: 30px;
+
+  background: #222;
+
+  color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  nav {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .photo {
+    width: 250px;
+    height: 280px;
+  }
+
+}
